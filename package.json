@@ -13,6 +13,7 @@
     "cover": "nyc --reporter=lcov npm t",
     "prebuild": "rimraf dist",
     "precommit": "npm run validate",
+    "dummyCommand": "",
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
     "build:umd": "webpack --output-filename index.umd.js",
